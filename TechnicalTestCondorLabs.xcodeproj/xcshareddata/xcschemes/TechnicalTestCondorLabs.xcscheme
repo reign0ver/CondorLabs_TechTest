@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "224E715725041C9900C76649"
-               BuildableName = "TechnicalTestCondorLabsTests.xctest"
-               BlueprintName = "TechnicalTestCondorLabsTests"
-               ReferencedContainer = "container:TechnicalTestCondorLabs.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "224E716225041C9900C76649"
-               BuildableName = "TechnicalTestCondorLabsUITests.xctest"
-               BlueprintName = "TechnicalTestCondorLabsUITests"
-               ReferencedContainer = "container:TechnicalTestCondorLabs.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

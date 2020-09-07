@@ -77,9 +77,5 @@ class TechnicalTestCondorLabsTests: XCTestCase {
             }
         }
     }
-    
-    override func tearDown() {
-        //TODO
-    }
 
 }

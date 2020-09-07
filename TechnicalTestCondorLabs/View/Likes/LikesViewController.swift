@@ -29,6 +29,7 @@ class LikesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationBar()
+        addTargets()
     }
     
     private func setupNavigationBar() {
@@ -39,6 +40,21 @@ class LikesViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc
+    private func likeAction() {
+        viewModel.getRandomImages()
+    }
+    
+    @objc
+    private func dislikeAction() {
+        viewModel.getRandomImages()
+    }
+    
+    private func addTargets() {
+        likeButton.addTarget(self, action: #selector(likeAction), for: .touchUpInside)
+        dislikeButton.addTarget(self, action: #selector(dislikeAction), for: .touchUpInside)
     }
     
     //MARK: - Constraints
@@ -111,6 +127,8 @@ class LikesViewController: UIViewController {
         return stackView
     }()
 }
+
+//MARK: - ViewModel Delegate
 
 extension LikesViewController: LikesViewModelDelegate {
     func updateView() {

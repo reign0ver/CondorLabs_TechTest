@@ -19,6 +19,7 @@ class DIManager {
     }
     
     private func registerDependencies() {
+        //Repositories
         #if MOCKS
         container.register(BreedsRemoteRepositoryProtocol.self) { _ in
             BreedsMockRepository()
@@ -43,7 +44,7 @@ class DIManager {
         }
         #endif
         
-        //Repositories
+        //DataRepositories
         container.register(BreedsDataRepository.self) { r in
             BreedsDataRepository(r.resolve(BreedsRemoteRepositoryProtocol.self)!)
         }
