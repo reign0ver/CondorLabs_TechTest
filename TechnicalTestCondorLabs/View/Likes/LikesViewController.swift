@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class LikesViewController: UIViewController {
 
@@ -19,8 +20,10 @@ class LikesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         setupCatImageView()
         setupButtonsStackView()
+        viewModel.getRandomImages()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,7 +47,7 @@ class LikesViewController: UIViewController {
         view.addSubview(catImageView)
         catImageView.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
-            catImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            catImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -80),
             catImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ]
         NSLayoutConstraint.activate(constraints)
@@ -56,11 +59,26 @@ class LikesViewController: UIViewController {
         buttonsStackView.addArrangedSubview(likeButton)
         buttonsStackView.addArrangedSubview(dislikeButton)
         let constraints = [
-            buttonsStackView.topAnchor.constraint(equalTo: catImageView.bottomAnchor, constant: 16),
-            buttonsStackView.leadingAnchor.constraint(equalTo: catImageView.leadingAnchor),
-            buttonsStackView.trailingAnchor.constraint(equalTo: catImageView.trailingAnchor),
+            buttonsStackView.topAnchor.constraint(equalTo: catImageView.bottomAnchor, constant: 32),
+            buttonsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonsStackView.heightAnchor.constraint(equalToConstant: 50),
+            buttonsStackView.widthAnchor.constraint(equalToConstant: 150)
         ]
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func configureView() {
+        let url = URL(string: viewModel.image!.url)
+        let scale = UIScreen.main.scale
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 200, height: 200)) |> RoundCornerImageProcessor(cornerRadius: 100)
+        catImageView.kf.indicatorType = .activity
+        catImageView.kf.setImage(
+            with: url,
+            options: [
+                .processor(processor),
+                .scaleFactor(scale),
+                .transition(.fade(1)),
+        ])
     }
     
     //MARK: - Views
@@ -72,13 +90,15 @@ class LikesViewController: UIViewController {
     
     private let likeButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Like", for: .normal)
+        let buttonImage = UIImage(named: "like")
+        button.setImage(buttonImage, for: .normal)
         return button
     }()
     
     private let dislikeButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Dislike", for: .normal)
+        let buttonImage = UIImage(named: "dislike")
+        button.setImage(buttonImage, for: .normal)
         return button
     }()
     
@@ -86,8 +106,16 @@ class LikesViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.alignment = .fill
-        stackView.distribution = .fill
-        stackView.spacing = 8
+        stackView.distribution = .fillEqually
+        stackView.spacing = 32
         return stackView
     }()
+}
+
+extension LikesViewController: LikesViewModelDelegate {
+    func updateView() {
+        DispatchQueue.main.async {
+            self.configureView()
+        }
+    }
 }

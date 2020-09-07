@@ -16,7 +16,7 @@ class LikesViewModel {
     
     private var repository: CatImagesDataRepository
     
-    var images: ImageBreed?
+    var image: ImageBreed?
     weak var delegate: LikesViewModelDelegate?
     
     let navigationTitle = "Votes"
@@ -32,7 +32,7 @@ class LikesViewModel {
             guard let strongSelf = self else { return }
             switch result {
             case .success(let images):
-                strongSelf.images = images[0]
+                strongSelf.image = images[0]
                 strongSelf.delegate?.updateView()
                 break
             case .failure(let error):

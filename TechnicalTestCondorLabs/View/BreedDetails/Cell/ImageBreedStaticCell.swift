@@ -25,8 +25,6 @@ class ImageBreedStaticCell: UITableViewCell {
     private let breedImage: UIImageView = {
         let image = UIImage(named: "goes_in")
         let imageView = UIImageView(image: image)
-        imageView.setRadius()
-        
         return imageView
     }()
     
@@ -48,13 +46,14 @@ class ImageBreedStaticCell: UITableViewCell {
     func configure(_ url: String) {
         let url = URL(string: url)
         let scale = UIScreen.main.scale
+        let processor = ResizingImageProcessor(referenceSize: CGSize(width: 200, height: 200)) |> RoundCornerImageProcessor(cornerRadius: 100)
         breedImage.kf.indicatorType = .activity
         breedImage.kf.setImage(
             with: url,
             options: [
+                .processor(processor),
                 .scaleFactor(scale),
                 .transition(.fade(1)),
-                .cacheOriginalImage,
         ])
     }
     
