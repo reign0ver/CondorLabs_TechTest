@@ -22,7 +22,7 @@ class CatImagesDataRepository {
         remoteRepository.getBreedImage(breedId, completion: completion)
     }
     
-    func getRandomImages(completion: @escaping (Result<[ImageBreed], NetworkError>) -> Void) {
+    func fetchRandomImages(completion: @escaping (Result<[ImageBreed], NetworkError>) -> Void) {
         remoteRepository.getRandomImages(completion: completion)
     }
     

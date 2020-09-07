@@ -10,25 +10,76 @@ import XCTest
 @testable import TechnicalTestCondorLabs
 
 class TechnicalTestCondorLabsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var catImagesDataRepository: CatImagesDataRepository!
+    var breedsDataRepository: BreedsDataRepository!
+    
+    let dependencyInjector = DIManager()
+    
+    override func setUp() {
+        catImagesDataRepository = CatImagesDataRepository(dependencyInjector.container.resolve(CatImagesLocalRepositoryProtocol.self)!,
+                                                          dependencyInjector.container.resolve(CatImagesRemoteRepositoryProtocol.self)!)
+        breedsDataRepository = BreedsDataRepository(dependencyInjector.container.resolve(BreedsRemoteRepositoryProtocol.self)!)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testCatRandomImageSuccessResponse() {
+        //Arrange - Act
+        catImagesDataRepository.fetchRandomImages(completion: { result in
+            switch result {
+            case .success(let images):
+                //Assert
+                XCTAssertNotNil(images)
+            case .failure(_):
+                break
+            }
+        })
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testCatImageBreedSuccessResponse() {
+        //Arrange
+        let breedId = "validBreedId"
+        //Act
+        catImagesDataRepository.fetchBreedImage(breedId, completion: { result in
+            switch result {
+            case .success(let images):
+                //Assert
+                XCTAssertNotNil(images)
+            case .failure(_):
+                break
+            }
+        })
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testCatImageBreedUnsuccessResponse() {
+        //Arrange
+        let breedId = "Angora"
+        let expectedMessageError = "Ups.  Something went wrong:(.  Try later."
+        //Act
+        catImagesDataRepository.fetchBreedImage(breedId, completion: { result in
+            switch result {
+            case .success(_):
+                break
+            case .failure(let error):
+                //Assert
+                XCTAssertEqual(error.rawValue, expectedMessageError)
+            }
+        })
+    }
+    
+    func testGetListOfBreedsSuccessResponse() {
+        //Arrange
+        breedsDataRepository.fetchBreeds { result in
+            switch result {
+            case .success(let breeds):
+                XCTAssertNotNil(breeds)
+            case .failure(_):
+                break
+            }
         }
+    }
+    
+    override func tearDown() {
+        //TODO
     }
 
 }

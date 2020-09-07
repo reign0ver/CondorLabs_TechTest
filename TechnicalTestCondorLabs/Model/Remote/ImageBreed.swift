@@ -17,6 +17,11 @@ struct ImageBreed: Decodable {
         case url
     }
     
+    init(id: String, url: String) {
+        self.id = id
+        self.url = url
+    }
+    
     init(from decoder: Decoder) throws {
         let container   = try decoder.container(keyedBy: CodingKeys.self)
         self.id         = try container.decode(String.self, forKey: .id)

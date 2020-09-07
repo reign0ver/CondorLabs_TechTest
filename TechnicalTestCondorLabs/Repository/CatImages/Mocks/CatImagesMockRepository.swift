@@ -10,11 +10,19 @@ import Foundation
 
 class CatImagesMockRepository: CatImagesRemoteRepositoryProtocol {
     
+    let imageBreed: [ImageBreed] = [
+        ImageBreed(id: "xx123xx", url: "https://www.google.com")
+    ]
+    
     func getBreedImage(_ breedId: String, completion: @escaping (Result<[ImageBreed], NetworkError>) -> Void) {
-        //TODO
+        if breedId == "validBreedId" {
+            completion(.success(imageBreed))
+        } else {
+            completion(.failure(.genericError))
+        }
     }
     
     func getRandomImages(completion: @escaping (Result<[ImageBreed], NetworkError>) -> Void) {
-        //TODO
+        completion(.success(imageBreed))
     }
 }

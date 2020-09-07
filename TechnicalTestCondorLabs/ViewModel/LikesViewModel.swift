@@ -28,7 +28,7 @@ class LikesViewModel {
     }
     
     func getRandomImages() {
-        repository.getRandomImages { [weak self] result in
+        repository.fetchRandomImages { [weak self] result in
             guard let strongSelf = self else { return }
             switch result {
             case .success(let images):
