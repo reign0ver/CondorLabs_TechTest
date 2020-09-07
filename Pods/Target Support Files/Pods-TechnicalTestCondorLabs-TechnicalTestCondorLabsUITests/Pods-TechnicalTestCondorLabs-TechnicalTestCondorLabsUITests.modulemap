@@ -1,0 +1,6 @@
+framework module Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests {
+  umbrella header "Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
