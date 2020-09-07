@@ -44,11 +44,13 @@ class LikesViewController: UIViewController {
     
     @objc
     private func likeAction() {
+        viewModel.saveVote(.like)
         viewModel.getRandomImages()
     }
     
     @objc
     private func dislikeAction() {
+        viewModel.saveVote(.dislike)
         viewModel.getRandomImages()
     }
     

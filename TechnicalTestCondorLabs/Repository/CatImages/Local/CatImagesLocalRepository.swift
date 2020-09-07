@@ -10,6 +10,15 @@ import Foundation
 
 class CatImagesLocalRepository: CatImagesLocalRepositoryProtocol {
     
-//    let persistInstance = BaseLocalRepository<String>()
+    let persistInstance = BaseLocalRepository<VoteEntity>()
+    
+    func save(vote: VoteEntity) {
+        do {
+            try persistInstance.insert(vote)
+        } catch {
+            print(error)
+        }
+        
+    }
     
 }

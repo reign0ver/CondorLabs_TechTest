@@ -26,4 +26,17 @@ class CatImagesDataRepository {
         remoteRepository.getRandomImages(completion: completion)
     }
     
+    func saveVote(_ vote: KindOfVote, imageBreed: ImageBreed) {
+        let vote = mapIntoVoteEntity(vote.rawValue, imageBreed)
+        localRepository.save(vote: vote)
+    }
+    
+    private func mapIntoVoteEntity(_ kindOfVote: String, _ imageBreed: ImageBreed) -> VoteEntity {
+        let vote = VoteEntity()
+        vote.name = imageBreed.id
+        vote.imageURL = imageBreed.url
+        vote.vote = kindOfVote
+        return vote
+    }
+    
 }

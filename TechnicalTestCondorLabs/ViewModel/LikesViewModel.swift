@@ -41,4 +41,8 @@ class LikesViewModel {
         }
     }
     
+    func saveVote(_ vote: KindOfVote) {
+        guard let image = image else { return }
+        repository.saveVote(vote, imageBreed: image)
+    }
 }
