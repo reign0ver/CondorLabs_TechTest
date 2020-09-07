@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EAD9ADDE01556B7BEB95EDB /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D2AC21D93A1A7135C83068 /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework */; };
 		224E714625041C9800C76649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E714525041C9800C76649 /* AppDelegate.swift */; };
 		224E714A25041C9800C76649 /* ListOfBreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E714925041C9800C76649 /* ListOfBreedsViewController.swift */; };
 		224E714F25041C9900C76649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224E714E25041C9900C76649 /* Assets.xcassets */; };
@@ -40,9 +41,10 @@
 		224E71BF2505BB0100C76649 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E71BE2505BB0100C76649 /* LikesViewController.swift */; };
 		224E71C12505D75900C76649 /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E71C02505D75900C76649 /* LikesViewModel.swift */; };
 		224E71C32505D7EC00C76649 /* CatImagesDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E71C22505D7EC00C76649 /* CatImagesDataRepository.swift */; };
-		23F9E713A6922197EEEDC83D /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3136FF5D332345FCD8197A53 /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework */; };
-		619967D2F3DDAEE1D93E1068 /* Pods_TechnicalTestCondorLabsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CD50BCFDD1CDAC17F702E1 /* Pods_TechnicalTestCondorLabsTests.framework */; };
-		BACC55381B276BA95A9AB334 /* Pods_TechnicalTestCondorLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B4E39BBCCF309FF6B1E740 /* Pods_TechnicalTestCondorLabs.framework */; };
+		224E71F625060B2700C76649 /* CatImagesMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E71F525060B2700C76649 /* CatImagesMockRepository.swift */; };
+		224E71F825060BDE00C76649 /* BreedsMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224E71F725060BDE00C76649 /* BreedsMockRepository.swift */; };
+		3CAC62F6CEB99D8ACB9FA4EC /* Pods_TechnicalTestCondorLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77780213BDE89783D612110D /* Pods_TechnicalTestCondorLabs.framework */; };
+		5FD1A637CCA574EE8498B7C3 /* Pods_TechnicalTestCondorLabsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20322725D683BB45CB1A150E /* Pods_TechnicalTestCondorLabsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F9EE1AE312434034748922 /* Pods-TechnicalTestCondorLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs.release.xcconfig"; sourceTree = "<group>"; };
+		20322725D683BB45CB1A150E /* Pods_TechnicalTestCondorLabsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestCondorLabsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E714225041C9800C76649 /* TechnicalTestCondorLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalTestCondorLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E714525041C9800C76649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		224E714925041C9800C76649 /* ListOfBreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBreedsViewController.swift; sourceTree = "<group>"; };
@@ -102,15 +106,18 @@
 		224E71BE2505BB0100C76649 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		224E71C02505D75900C76649 /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
 		224E71C22505D7EC00C76649 /* CatImagesDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesDataRepository.swift; sourceTree = "<group>"; };
-		3136FF5D332345FCD8197A53 /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		377362C1370AA96F48E30394 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E28472BCE0D7DDA4376DC26 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4CFFACBA0296450CAF781DBE /* Pods-TechnicalTestCondorLabsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabsTests.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabsTests/Pods-TechnicalTestCondorLabsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		65B4E39BBCCF309FF6B1E740 /* Pods_TechnicalTestCondorLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestCondorLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		696FBC2F494D73D03620BDD3 /* Pods-TechnicalTestCondorLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs.debug.xcconfig"; sourceTree = "<group>"; };
-		8245E13361BCB25E477BC6BB /* Pods-TechnicalTestCondorLabsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabsTests.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabsTests/Pods-TechnicalTestCondorLabsTests.release.xcconfig"; sourceTree = "<group>"; };
-		CDE454F2BE9DEC46B6B6636B /* Pods-TechnicalTestCondorLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs.release.xcconfig"; sourceTree = "<group>"; };
-		F0CD50BCFDD1CDAC17F702E1 /* Pods_TechnicalTestCondorLabsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestCondorLabsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224E71F525060B2700C76649 /* CatImagesMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesMockRepository.swift; sourceTree = "<group>"; };
+		224E71F725060BDE00C76649 /* BreedsMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsMockRepository.swift; sourceTree = "<group>"; };
+		3B3BC2CCF81F537139DD597F /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		41D30D0622A14C2CA5CCCE9A /* Pods-TechnicalTestCondorLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs.debug.xcconfig"; sourceTree = "<group>"; };
+		5FB437736349C69DCCDE32D4 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77780213BDE89783D612110D /* Pods_TechnicalTestCondorLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestCondorLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F52CF2043A271C7DAD1075 /* Pods-TechnicalTestCondorLabsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabsTests.debug.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabsTests/Pods-TechnicalTestCondorLabsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B15D9A04A2EBEA9185FF4C8B /* Pods-TechnicalTestCondorLabsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabsTests.release.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabsTests/Pods-TechnicalTestCondorLabsTests.release.xcconfig"; sourceTree = "<group>"; };
+		B48F1DE1FDD45E56805B999F /* Pods-TechnicalTestCondorLabs.mocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs.mocks.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs.mocks.xcconfig"; sourceTree = "<group>"; };
+		B71B00A18C2545F38AFC38D9 /* Pods-TechnicalTestCondorLabsTests.mocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabsTests.mocks.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabsTests/Pods-TechnicalTestCondorLabsTests.mocks.xcconfig"; sourceTree = "<group>"; };
+		BB4D877FB17DDF5B85793CF4 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.mocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.mocks.xcconfig"; path = "Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.mocks.xcconfig"; sourceTree = "<group>"; };
+		F2D2AC21D93A1A7135C83068 /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BACC55381B276BA95A9AB334 /* Pods_TechnicalTestCondorLabs.framework in Frameworks */,
+				3CAC62F6CEB99D8ACB9FA4EC /* Pods_TechnicalTestCondorLabs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619967D2F3DDAEE1D93E1068 /* Pods_TechnicalTestCondorLabsTests.framework in Frameworks */,
+				5FD1A637CCA574EE8498B7C3 /* Pods_TechnicalTestCondorLabsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F9E713A6922197EEEDC83D /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework in Frameworks */,
+				1EAD9ADDE01556B7BEB95EDB /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +156,7 @@
 				224E716625041C9900C76649 /* TechnicalTestCondorLabsUITests */,
 				224E714325041C9800C76649 /* Products */,
 				7E850056ADA7311362A3D247 /* Pods */,
-				5F6803FB13B8DE5C45BFD77D /* Frameworks */,
+				4A5B23D5FC981831F80688F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +284,7 @@
 		224E718C2504503400C76649 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				224E71F725060BDE00C76649 /* BreedsMockRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -351,6 +359,7 @@
 		224E71AB25056F8400C76649 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				224E71F525060B2700C76649 /* CatImagesMockRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -388,12 +397,12 @@
 			path = Remote;
 			sourceTree = "<group>";
 		};
-		5F6803FB13B8DE5C45BFD77D /* Frameworks */ = {
+		4A5B23D5FC981831F80688F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65B4E39BBCCF309FF6B1E740 /* Pods_TechnicalTestCondorLabs.framework */,
-				3136FF5D332345FCD8197A53 /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework */,
-				F0CD50BCFDD1CDAC17F702E1 /* Pods_TechnicalTestCondorLabsTests.framework */,
+				77780213BDE89783D612110D /* Pods_TechnicalTestCondorLabs.framework */,
+				F2D2AC21D93A1A7135C83068 /* Pods_TechnicalTestCondorLabs_TechnicalTestCondorLabsUITests.framework */,
+				20322725D683BB45CB1A150E /* Pods_TechnicalTestCondorLabsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -401,12 +410,15 @@
 		7E850056ADA7311362A3D247 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				696FBC2F494D73D03620BDD3 /* Pods-TechnicalTestCondorLabs.debug.xcconfig */,
-				CDE454F2BE9DEC46B6B6636B /* Pods-TechnicalTestCondorLabs.release.xcconfig */,
-				377362C1370AA96F48E30394 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig */,
-				3E28472BCE0D7DDA4376DC26 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig */,
-				4CFFACBA0296450CAF781DBE /* Pods-TechnicalTestCondorLabsTests.debug.xcconfig */,
-				8245E13361BCB25E477BC6BB /* Pods-TechnicalTestCondorLabsTests.release.xcconfig */,
+				41D30D0622A14C2CA5CCCE9A /* Pods-TechnicalTestCondorLabs.debug.xcconfig */,
+				B48F1DE1FDD45E56805B999F /* Pods-TechnicalTestCondorLabs.mocks.xcconfig */,
+				04F9EE1AE312434034748922 /* Pods-TechnicalTestCondorLabs.release.xcconfig */,
+				5FB437736349C69DCCDE32D4 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig */,
+				BB4D877FB17DDF5B85793CF4 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.mocks.xcconfig */,
+				3B3BC2CCF81F537139DD597F /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig */,
+				77F52CF2043A271C7DAD1075 /* Pods-TechnicalTestCondorLabsTests.debug.xcconfig */,
+				B71B00A18C2545F38AFC38D9 /* Pods-TechnicalTestCondorLabsTests.mocks.xcconfig */,
+				B15D9A04A2EBEA9185FF4C8B /* Pods-TechnicalTestCondorLabsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -418,11 +430,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224E716C25041C9900C76649 /* Build configuration list for PBXNativeTarget "TechnicalTestCondorLabs" */;
 			buildPhases = (
-				893AC0EC8F85680FABE9C4AA /* [CP] Check Pods Manifest.lock */,
+				4F250346894F0A899D777B6E /* [CP] Check Pods Manifest.lock */,
 				224E713E25041C9800C76649 /* Sources */,
 				224E713F25041C9800C76649 /* Frameworks */,
 				224E714025041C9800C76649 /* Resources */,
-				725EEEBD424FE684B1B5B23C /* [CP] Embed Pods Frameworks */,
+				BC2A4F7737C2DC6AE82E7D30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,7 +449,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224E716F25041C9900C76649 /* Build configuration list for PBXNativeTarget "TechnicalTestCondorLabsTests" */;
 			buildPhases = (
-				FE36074061B084ACDFEC64A4 /* [CP] Check Pods Manifest.lock */,
+				91E1168B49AF98F7B7B8E077 /* [CP] Check Pods Manifest.lock */,
 				224E715425041C9900C76649 /* Sources */,
 				224E715525041C9900C76649 /* Frameworks */,
 				224E715625041C9900C76649 /* Resources */,
@@ -456,11 +468,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224E717225041C9900C76649 /* Build configuration list for PBXNativeTarget "TechnicalTestCondorLabsUITests" */;
 			buildPhases = (
-				D18865C9FE28F17EB3A405CE /* [CP] Check Pods Manifest.lock */,
+				2774C3C1A478CFB75BB14534 /* [CP] Check Pods Manifest.lock */,
 				224E715F25041C9900C76649 /* Sources */,
 				224E716025041C9900C76649 /* Frameworks */,
 				224E716125041C9900C76649 /* Resources */,
-				7BF69DB3E800E0D8833A2AC5 /* [CP] Embed Pods Frameworks */,
+				47CC43B27710196AA93D0C14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -542,63 +554,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		725EEEBD424FE684B1B5B23C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BF69DB3E800E0D8833A2AC5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		893AC0EC8F85680FABE9C4AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TechnicalTestCondorLabs-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D18865C9FE28F17EB3A405CE /* [CP] Check Pods Manifest.lock */ = {
+		2774C3C1A478CFB75BB14534 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -620,7 +576,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE36074061B084ACDFEC64A4 /* [CP] Check Pods Manifest.lock */ = {
+		47CC43B27710196AA93D0C14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests/Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F250346894F0A899D777B6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechnicalTestCondorLabs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E1168B49AF98F7B7B8E077 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,6 +637,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC2A4F7737C2DC6AE82E7D30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechnicalTestCondorLabs/Pods-TechnicalTestCondorLabs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -653,6 +665,7 @@
 				224E719C250485A800C76649 /* BaseLocalRepository.swift in Sources */,
 				224E719E2504930A00C76649 /* BreedsViewModel.swift in Sources */,
 				224E71AF2505705F00C76649 /* CatImagesRemoteRepositoryProtocol.swift in Sources */,
+				224E71F625060B2700C76649 /* CatImagesMockRepository.swift in Sources */,
 				224E71982504766500C76649 /* Breed.swift in Sources */,
 				224E71B8250598C800C76649 /* BreedInformationCell.swift in Sources */,
 				224E71BA2505ABCA00C76649 /* WikipediaWebViewController.swift in Sources */,
@@ -677,6 +690,7 @@
 				224E71BF2505BB0100C76649 /* LikesViewController.swift in Sources */,
 				224E719425045C0A00C76649 /* BaseRemoteRepository.swift in Sources */,
 				224E719625045CC500C76649 /* NetworkError.swift in Sources */,
+				224E71F825060BDE00C76649 /* BreedsMockRepository.swift in Sources */,
 				224E718925044B3D00C76649 /* CatImagesLocalRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,7 +793,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -832,6 +846,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -840,7 +855,7 @@
 		};
 		224E716D25041C9900C76649 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 696FBC2F494D73D03620BDD3 /* Pods-TechnicalTestCondorLabs.debug.xcconfig */;
+			baseConfigurationReference = 41D30D0622A14C2CA5CCCE9A /* Pods-TechnicalTestCondorLabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -859,7 +874,7 @@
 		};
 		224E716E25041C9900C76649 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE454F2BE9DEC46B6B6636B /* Pods-TechnicalTestCondorLabs.release.xcconfig */;
+			baseConfigurationReference = 04F9EE1AE312434034748922 /* Pods-TechnicalTestCondorLabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -878,7 +893,7 @@
 		};
 		224E717025041C9900C76649 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CFFACBA0296450CAF781DBE /* Pods-TechnicalTestCondorLabsTests.debug.xcconfig */;
+			baseConfigurationReference = 77F52CF2043A271C7DAD1075 /* Pods-TechnicalTestCondorLabsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -901,7 +916,7 @@
 		};
 		224E717125041C9900C76649 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8245E13361BCB25E477BC6BB /* Pods-TechnicalTestCondorLabsTests.release.xcconfig */;
+			baseConfigurationReference = B15D9A04A2EBEA9185FF4C8B /* Pods-TechnicalTestCondorLabsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -924,7 +939,7 @@
 		};
 		224E717325041C9900C76649 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 377362C1370AA96F48E30394 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig */;
+			baseConfigurationReference = 5FB437736349C69DCCDE32D4 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -945,7 +960,7 @@
 		};
 		224E717425041C9900C76649 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E28472BCE0D7DDA4376DC26 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig */;
+			baseConfigurationReference = 3B3BC2CCF81F537139DD597F /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -964,6 +979,130 @@
 			};
 			name = Release;
 		};
+		224E71F12506078400C76649 /* Mocks */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D MOCKS";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Mocks;
+		};
+		224E71F22506078400C76649 /* Mocks */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B48F1DE1FDD45E56805B999F /* Pods-TechnicalTestCondorLabs.mocks.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCAK89HM7;
+				INFOPLIST_FILE = TechnicalTestCondorLabs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.TechnicalTestCondorLabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Mocks;
+		};
+		224E71F32506078500C76649 /* Mocks */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71B00A18C2545F38AFC38D9 /* Pods-TechnicalTestCondorLabsTests.mocks.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCAK89HM7;
+				INFOPLIST_FILE = TechnicalTestCondorLabsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.TechnicalTestCondorLabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechnicalTestCondorLabs.app/TechnicalTestCondorLabs";
+			};
+			name = Mocks;
+		};
+		224E71F42506078500C76649 /* Mocks */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4D877FB17DDF5B85793CF4 /* Pods-TechnicalTestCondorLabs-TechnicalTestCondorLabsUITests.mocks.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCAK89HM7;
+				INFOPLIST_FILE = TechnicalTestCondorLabsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.TechnicalTestCondorLabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechnicalTestCondorLabs;
+			};
+			name = Mocks;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -971,6 +1110,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				224E716A25041C9900C76649 /* Debug */,
+				224E71F12506078400C76649 /* Mocks */,
 				224E716B25041C9900C76649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -980,6 +1120,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				224E716D25041C9900C76649 /* Debug */,
+				224E71F22506078400C76649 /* Mocks */,
 				224E716E25041C9900C76649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -989,6 +1130,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				224E717025041C9900C76649 /* Debug */,
+				224E71F32506078500C76649 /* Mocks */,
 				224E717125041C9900C76649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -998,6 +1140,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				224E717325041C9900C76649 /* Debug */,
+				224E71F42506078500C76649 /* Mocks */,
 				224E717425041C9900C76649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

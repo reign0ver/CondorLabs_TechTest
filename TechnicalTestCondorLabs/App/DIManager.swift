@@ -19,6 +19,18 @@ class DIManager {
     }
     
     private func registerDependencies() {
+        #if MOCKS
+        container.register(BreedsRemoteRepositoryProtocol.self) { _ in
+            BreedsMocksRepository()
+        }
+        
+        container.register(CatImagesRemoteRepositoryProtocol.self) { _ in
+            CatImagesMockRepository()
+        }
+        container.register(CatImagesLocalRepositoryProtocol.self) { _ in
+            CatImagesLocalRepository()
+        }
+        #else
         container.register(BreedsRemoteRepositoryProtocol.self) { _ in
             BreedsRemoteRepository()
         }
@@ -29,6 +41,7 @@ class DIManager {
         container.register(CatImagesLocalRepositoryProtocol.self) { _ in
             CatImagesLocalRepository()
         }
+        #endif
         
         //Repositories
         container.register(BreedsDataRepository.self) { r in
