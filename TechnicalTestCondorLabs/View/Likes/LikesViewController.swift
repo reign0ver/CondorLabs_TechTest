@@ -30,6 +30,7 @@ class LikesViewController: UIViewController {
         super.viewWillAppear(animated)
         setupNavigationBar()
         addTargets()
+        view.backgroundColor = UIColor(named: "white_black_color")
     }
     
     private func setupNavigationBar() {

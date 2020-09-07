@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class BaseLocalRepository<T: RealmSwift.Object> {
+class BaseLocalRepository<T: Object> {
     
     private var realm: Realm!
     
